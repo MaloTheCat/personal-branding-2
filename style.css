@@ -6,6 +6,10 @@
 body {
   padding-left: 5%;
   padding-right: 5%;
+  background-image: url("images/hero banner_fond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*----- Navbar -----*/
@@ -24,7 +28,7 @@ li > a {
   font-size: 1em;
 }
 
-a:hover {
+li > a:hover {
   color: white;
   background-color: #163D5C;
   padding-top: 5px;
@@ -58,7 +62,6 @@ ul:nth-child(2) {
 /*----- Section 1 -----*/
 
 #sec1 {
-  border: 2px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,14 +69,11 @@ ul:nth-child(2) {
 }
 
 .sec1-left {
-  border: 2px solid blue;
   width: 50%;
 }
 
 .sec1-right {
-  border: 2px solid red;
   width: 40%;
-
 }
 
 h1 {
@@ -93,6 +93,14 @@ h2 span {
   margin-left: -5px;
 }
 
+a > .button {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
 h2 {
   color: white;
   font-family: "Rubik", sans-serif;
@@ -108,10 +116,51 @@ h3 {
   font-size: 1em;
 }
 
-p {
+.sec1-left > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 1em;
   max-width: 450px;
   text-align: justify;
+  justify-content: center;
 }
+
+.button {
+  background-color: #163D5C;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+}
+
+.button:hover {
+  color: #163D5C;
+  background-color: transparent;
+  border: 3px solid #163D5C;
+  transition: all .5s ease-in-out;
+  font-weight: 800;
+}
+
+.transition-num > p {
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 270px;
+  text-align: center;
+
+}
+
+/*----- Section 2 -----*/
+
+#sec2 {
+  display: flex;
+}
+
