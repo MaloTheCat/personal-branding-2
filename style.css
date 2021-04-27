@@ -18,6 +18,12 @@ a {
   color: black;
 }
 
+li > a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
 a:hover {
   color: white;
   background-color: #163D5C;
@@ -30,13 +36,10 @@ a:hover {
 
 nav {
   position: fixed;
+  width: 90vw;
+  justify-content: space-between;
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-nav > ul {
-  justify-content: space-between;
 }
 
 ul {
@@ -82,7 +85,6 @@ h1 {
 }
 
 h2 span {
-  color: white;
   background-color: #163D5C;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -92,6 +94,10 @@ h2 span {
 }
 
 h2 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -99,5 +105,13 @@ h2 {
 h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 600;
-  font-size: .8em;
+  font-size: 1em;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 450px;
+  text-align: justify;
 }
