@@ -39,6 +39,7 @@ a {
 }
 
 nav {
+  z-index: 4;
   position: fixed;
   width: 90vw;
   justify-content: space-between;
@@ -167,12 +168,47 @@ h3 {
 
 .sec2-left {
   width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.duo-first {
+  border: 2px solid red;
+  width: 50vw;
+  position: relative;
+}
+
+.duo-second {
+  margin-top: 100px;
+  position: relative;
+}
+
+.duo-first > img:nth-child(2) {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.duo-first > img {
+  width: 60%;
+  min-width: 300px;
+}
+
+.duo-second > img {
+  width: 60%;
+  min-width: 300px;
+}
+
+.duo-second > img:nth-child(2) {
+  position: absolute;
+  top: 20%;
+  left: 45%;
 }
 
 .sec2-right {
+  z-index: 2;
   width: 50vw;
 }
-
 .sec2-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -196,6 +232,7 @@ h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
+  letter-spacing: -.05em;
 }
 
 .num-a {
