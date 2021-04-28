@@ -22,13 +22,13 @@ a {
   color: black;
 }
 
-li > a {
+.li-nav > a {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
 
-li > a:hover {
+.li-nav > a:hover {
   color: white;
   background-color: #163D5C;
   padding-top: 5px;
@@ -65,7 +65,8 @@ nav > ul:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
+  padding-top: 75px;
 }
 
 .sec1-left {
@@ -183,7 +184,7 @@ h3 {
   grid-column: 2 / 3;
   justify-self: end;
   font-family: "Rubik", sans serif;
-  font-size: 3em;
+  font-size: 4em;
   align-self: center;
   border-bottom: 8px solid yellow;
 }
@@ -194,7 +195,7 @@ h3 {
   align-self: center;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .num-a {
@@ -236,3 +237,42 @@ h3 {
 .text-e {
   grid-row: 5 / 6;
 }
+
+/*----- Footer -----*/
+
+.icones {
+  width: 35px;
+  filter: invert(17%) sepia(9%) saturate(7132%) hue-rotate(175deg) brightness(97%) contrast(87%);
+  padding: 0 8px;
+  align-self: center;
+}
+
+footer {
+  height: 100px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul {
+  margin-top: 150px;
+  display: flex;
+}
+
+.text-footer {
+  color: #163D5C;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.icones:hover {
+  opacity: .8;
+  transition: all .5s ease-in-out;
+  transform: translate(0, -10px);
+}
+
+
