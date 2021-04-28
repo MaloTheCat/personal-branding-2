@@ -50,11 +50,11 @@ ul {
   padding-inline-start: 0px;
 }
 
-ul:nth-child(1) {
+nav > ul:nth-child(1) {
   display: flex;
 }
 
-ul:nth-child(2) {
+nav > ul:nth-child(2) {
   display: flex;
   align-items: center;
 }
@@ -164,3 +164,75 @@ h3 {
   display: flex;
 }
 
+.sec2-left {
+  width: 50vw;
+}
+
+.sec2-right {
+  width: 50vw;
+}
+
+.sec2-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.num {
+  grid-column: 2 / 3;
+  justify-self: end;
+  font-family: "Rubik", sans serif;
+  font-size: 3em;
+  align-self: center;
+  border-bottom: 8px solid yellow;
+}
+
+.text {
+  grid-column: 3 / 5;
+  justify-self: start;
+  align-self: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.num-a {
+  grid-row: 1 / 2;
+}
+
+.text-a {
+  grid-row: 1 / 2;
+}
+
+.num-b {
+  grid-row: 2 / 3;
+}
+
+.text-b {
+  grid-row: 2 / 3;
+}
+
+.num-c {
+  grid-row: 3 / 4;
+}
+
+.text-c {
+  grid-row: 3 / 4;
+}
+
+.num-d {
+  grid-row: 4 / 5;
+}
+
+.text-d {
+  grid-row: 4 / 5;
+}
+
+.num-e {
+  grid-row: 5 / 6;
+}
+
+.text-e {
+  grid-row: 5 / 6;
+}
