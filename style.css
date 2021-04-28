@@ -22,13 +22,13 @@ a {
   color: black;
 }
 
-li > a {
+.li-nav > a {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
 
-li > a:hover {
+.li-nav > a:hover {
   color: white;
   background-color: #163D5C;
   padding-top: 5px;
@@ -39,7 +39,8 @@ li > a:hover {
 }
 
 nav {
-  position: fixed;
+  z-index: 4;
+  position: sticky;
   width: 90vw;
   justify-content: space-between;
   display: flex;
@@ -65,7 +66,9 @@ nav > ul:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
+  padding-top: 75px;
+  /*margin-bottom: 50px;*/
 }
 
 .sec1-left {
@@ -97,7 +100,7 @@ a > .button {
   display: flex;
   justify-content: center;
   width: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 16px;
 }
 
@@ -155,23 +158,68 @@ h3 {
   font-size: 1em;
   max-width: 270px;
   text-align: center;
+}
+.transition-num {
+  display: flex;
+  flex-direction: column;
+}
 
+.transition-num > img:nth-child(1) {
+  width: 200px;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 /*----- Section 2 -----*/
 
 #sec2 {
   display: flex;
+  margin-top: 50px;
 }
 
 .sec2-left {
+  margin-top: 50px;
   width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.duo-first {
+  width: 50vw;
+  position: relative;
+}
+
+.duo-second {
+  margin-top: 100px;
+  position: relative;
+}
+
+.duo-first > img:nth-child(2) {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.duo-first > img {
+  width: 60%;
+  min-width: 300px;
+}
+
+.duo-second > img {
+  width: 60%;
+  min-width: 300px;
+}
+
+.duo-second > img:nth-child(2) {
+  position: absolute;
+  top: 20%;
+  left: 45%;
 }
 
 .sec2-right {
+  z-index: 2;
   width: 50vw;
 }
-
 .sec2-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -183,7 +231,7 @@ h3 {
   grid-column: 2 / 3;
   justify-self: end;
   font-family: "Rubik", sans serif;
-  font-size: 3em;
+  font-size: 4em;
   align-self: center;
   border-bottom: 8px solid yellow;
 }
@@ -194,7 +242,8 @@ h3 {
   align-self: center;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.5em;
+  letter-spacing: -.05em;
 }
 
 .num-a {
@@ -236,3 +285,42 @@ h3 {
 .text-e {
   grid-row: 5 / 6;
 }
+
+/*----- Footer -----*/
+
+.icones {
+  width: 35px;
+  filter: invert(17%) sepia(9%) saturate(7132%) hue-rotate(175deg) brightness(97%) contrast(87%);
+  padding: 0 8px;
+  align-self: center;
+}
+
+footer {
+  height: 100px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul {
+  margin-top: 150px;
+  display: flex;
+}
+
+.text-footer {
+  color: #163D5C;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.icones:hover {
+  opacity: .8;
+  transition: all .5s ease-in-out;
+  transform: translate(0, -10px);
+}
+
+
