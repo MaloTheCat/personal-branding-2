@@ -1,0 +1,136 @@
+* {
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url("images/hero banner_fond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/*----- Navbar -----*/
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+.li-nav > a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.li-nav > a:hover {
+  color: white;
+  background-color: #163D5C;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all .5s ease-in-out;
+}
+
+nav {
+  z-index: 4;
+  position: sticky;
+  width: 90vw;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+nav > ul:nth-child(1) {
+  display: flex;
+}
+
+nav > ul:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+/*----- Form -----*/
+
+form.form {
+  display: table;
+}
+
+div.form {
+  display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+/*----- Contenus -----*/
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke: 3px #163D5C;
+  line-height: 1.1em;
+}
+
+#sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding-top: 75px;
+}
+
+/*----- Footer -----*/
+
+.icones {
+  width: 35px;
+  filter: invert(17%) sepia(9%) saturate(7132%) hue-rotate(175deg) brightness(97%) contrast(87%);
+  padding: 0 8px;
+  align-self: center;
+}
+
+footer {
+  height: 100px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul {
+  margin-top: 150px;
+  display: flex;
+}
+
+.text-footer {
+  color: #163D5C;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.icones:hover {
+  opacity: .8;
+  transition: all .5s ease-in-out;
+  transform: translate(0, -10px);
+}
