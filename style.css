@@ -68,7 +68,6 @@ nav > ul:nth-child(2) {
   align-items: center;
   height: 70vh;
   padding-top: 75px;
-  /*margin-bottom: 50px;*/
 }
 
 .sec1-left {
@@ -322,5 +321,4 @@ footer > ul {
   transition: all .5s ease-in-out;
   transform: translate(0, -10px);
 }
-
 
