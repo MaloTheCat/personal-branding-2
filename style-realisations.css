@@ -62,30 +62,14 @@ nav > ul:nth-child(2) {
 
 /*----- Contenus -----*/
 
-h1 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 6vw;
+#main-container {
   display: flex;
   justify-content: center;
-  color: transparent;
-  -webkit-text-stroke: 3px #163D5C;
-  line-height: 1.1em;
-  margin-top: 50px;
-}
-
-#sec1 {
-  border: 2px solid green;
-  display: flex;
-  justify-content: center;
-  /*align-items: start;*/
-  /*height: 70vh;*/
-  margin-top: 50px;
-}
-
-.sec2 {
-  border: 2px solid red;
   margin-top: 50px;
   margin-left: -40px;
+}
+
+.wrapper {
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -95,18 +79,12 @@ h1 {
   position: relative;
 }
 
-.duo-first > img:nth-child(2) {
-  position: absolute;
-  top: 20%;
-  left: 45%;
-}
-
 .duo > img {
   width: 60%;
   min-width: 300px;
 }
 
-.duo-second > img:nth-child(2) {
+.duo > img:nth-child(2) {
   position: absolute;
   top: 20%;
   left: 45%;
