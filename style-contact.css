@@ -4,12 +4,14 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   padding-left: 5%;
   padding-right: 5%;
   background-image: url("images/hero banner_fond.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 80vh;
 }
 
 /*----- Navbar -----*/
@@ -62,7 +64,120 @@ nav > ul:nth-child(2) {
 
 /*----- Form -----*/
 
-form.form {
+/*.container {
+  margin-top: 100px;
+  border-radius: 18px;
+  background-color: rgba(180, 180, 210, .5);
+  padding: 20px;
+  max-width: 700px;
+  display: flex;
+  margin: 10% auto;
+}
+
+label {
+  font-family: "Rubik", sans-serif;
+  margin-left: 10px;
+}
+
+input[type=text], select, textarea {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #163D5C;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #163D5C;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: #163D5C;
+  background-color: transparent;
+  border: 3px solid #163D5C;
+  transition: all .5s ease-in-out;
+  font-weight: 800;
+}
+
+#submit {
+  display: flex;
+}*/
+
+#main-container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+.wrapper {
+  width: 50%;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #163D5C;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.button:hover {
+  color: #163D5C;
+  background-color: transparent;
+  border: 3px solid #163D5C;
+  transition: all .5s ease-in-out;
+  font-weight: 800;
+}
+
+.transition-num > p {
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 270px;
+  text-align: center;
+}
+.transition-num {
+  display: flex;
+  flex-direction: column;
+}
+
+.transition-num > img:nth-child(1) {
+  width: 200px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+/*form.form {
   display: table;
 }
 
@@ -77,25 +192,25 @@ label, input {
 
 label {
     padding-right: 10px;
-}
+}*/
 
 /*----- Contenus -----*/
 
-h1 {
+/*h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 6vw;
   color: transparent;
   -webkit-text-stroke: 3px #163D5C;
   line-height: 1.1em;
-}
+}*/
 
-#sec1 {
+/*#sec1 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
   padding-top: 75px;
-}
+}*/
 
 /*----- Footer -----*/
 
