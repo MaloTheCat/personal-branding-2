@@ -74,27 +74,24 @@ h1 {
 }
 
 #sec1 {
+  border: 2px solid green;
   display: flex;
   justify-content: center;
-  align-items: start;
-  height: 70vh;
+  /*align-items: start;*/
+  /*height: 70vh;*/
   margin-top: 50px;
 }
 
-.sec2-left {
+.sec2 {
+  border: 2px solid red;
   margin-top: 50px;
-  width: 50vw;
+  margin-left: -40px;
+  width: 80vw;
   display: flex;
   flex-direction: column;
 }
 
-.duo-first {
-  width: 50vw;
-  position: relative;
-}
-
-.duo-second {
-  margin-top: 100px;
+.duo {
   position: relative;
 }
 
@@ -104,12 +101,7 @@ h1 {
   left: 45%;
 }
 
-.duo-first > img {
-  width: 60%;
-  min-width: 300px;
-}
-
-.duo-second > img {
+.duo > img {
   width: 60%;
   min-width: 300px;
 }
