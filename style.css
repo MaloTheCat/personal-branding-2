@@ -44,7 +44,7 @@ nav {
   width: 90vw;
   justify-content: space-between;
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 ul {
@@ -319,7 +319,7 @@ footer > ul {
     width: 90vw;
     justify-content: space-between;
     display: flex;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-right: 20px;
   }
 

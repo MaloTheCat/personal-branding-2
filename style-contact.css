@@ -11,7 +11,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 /*----- Navbar -----*/
@@ -46,7 +46,7 @@ nav {
   width: 90vw;
   justify-content: space-between;
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 ul {
@@ -166,6 +166,7 @@ input[type=submit]:hover {
   max-width: 270px;
   text-align: center;
 }
+
 .transition-num {
   display: flex;
   flex-direction: column;
@@ -176,43 +177,6 @@ input[type=submit]:hover {
   align-self: center;
   margin-bottom: 20px;
 }
-
-/*form.form {
-  display: table;
-}
-
-div.form {
-  display: table-row;
-}
-
-label, input {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-label {
-    padding-right: 10px;
-}*/
-
-/*----- Contenus -----*/
-
-/*h1 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 6vw;
-  color: transparent;
-  -webkit-text-stroke: 3px #163D5C;
-  line-height: 1.1em;
-}*/
-
-/*#sec1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  padding-top: 75px;
-}*/
-
-/*----- Footer -----*/
 
 .icones {
   width: 35px;
@@ -231,7 +195,7 @@ footer > ul {
 }
 
 footer > ul {
-  margin-top: 150px;
+  /*margin-top: 150px;*/
   display: flex;
 }
 
@@ -247,4 +211,70 @@ footer > ul {
   opacity: .8;
   transition: all .5s ease-in-out;
   transform: translate(0, -10px);
+}
+
+/*----- Mobile -----*/
+
+@media screen and (max-width: 700px) {
+  /*----- Navbar -----*/
+  nav {
+    font-size: .8em;
+    z-index: 4;
+    position: sticky;
+    width: 90vw;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 20px;
+    margin-right: 20px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  nav > ul:nth-child(1) {
+    display: flex;
+  }
+
+  nav > ul:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+  /*----- Contenus -----*/
+  body {
+    height: 100vh;
+    position: relative;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper > p {
+    padding: 20px 0;
+  }
+
+  #main-container {
+    height: 70%;
+  }
+  /*----- Footer -----*/
+  footer {
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px;
+    margin-right: 20px;
+  }
+
+  .icones {
+    width: 50px;
+  }
+
+  .text-footer {
+    font-size: .6em;
+    text-align: center;
+    width: 100%;
+    padding-right: 0px;
+  }
 }
